@@ -1,0 +1,108 @@
+/* Asegura que la pantalla ocupe el 100% */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Inter', sans-serif; /* Fuente más limpia tipo Apple */
+}
+
+/* Centra el container en la pantalla */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F5F5F7; /* Gris muy suave, similar al fondo de Apple */
+}
+
+/* Estilo del container */
+.container {
+  width: 300px; /* Cambié a un tamaño más adecuado */
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 20px; /* Bordes más redondeados, más estilo Apple */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra más notoria */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Estilo para la imagen de perfil */
+.profilepicture img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; 
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para la imagen */
+}
+
+/* Título (nombre) */
+h2 {
+  color: #1C1C1E; /* Color de texto tipo Apple */
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/* Ubicación */
+.location p {
+  margin-top: 0;
+  font-size: 17px;
+  color: #0A84FF; /* Gris suave, típico de iOS */
+  font-weight: 400;
+  text-align: center;
+}
+
+/* Profesión */
+.profession p {
+  margin-top: 0;
+  font-size: 14px;
+  color: #1C1C1E;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* Estilo de los enlaces (botones) */
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.links li a {
+  text-decoration: none;
+  background-color: white;    /* Fondo oscuro tipo Apple */
+  color: #FFFFFF;
+  padding: 12px 24px;
+  border-radius: 12px;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */
+  display: inline-block;
+  width: 220px;                 /* Ancho uniforme para todos */
+  text-align: center;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Sombra suave para el botón */
+}
+
+.links li a:hover {
+  background-color: #0A84FF;    /* Azul suave como hover */
+  transform: translateY(-2px);   /* Efecto de elevarse al pasar el mouse */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra al hacer hover */
+  transform: scale(1.15);
+}
+
+.links li a img{
+    width: 30px;
+    height: 30px;
+  max-width: 100%; /* Esto evitará que las imágenes se estiren más allá de su tamaño original */
+}
